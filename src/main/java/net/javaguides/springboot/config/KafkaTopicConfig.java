@@ -9,7 +9,11 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaTopicConfig {
 
     @Bean
-    public NewTopic javaguidesTopic(){
+    public NewTopic myStrTopic(){
         return TopicBuilder.name("some-topic-with-string-value").build();
+    }
+    @Bean
+    public NewTopic muJsonTopic(){
+        return TopicBuilder.name("some-topic-with-json-value").build();
     }
 }

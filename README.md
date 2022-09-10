@@ -29,5 +29,7 @@ https://docs.spring.io/spring-kafka/reference/html/#quick-tour
 
 howto:
 http://localhost:8080/api/v1/kafka/publish?message=hello%20world%201
-
+string example
 .\bin\windows\kafka-console-consumer.bat --topic some-topic-with-string-value --from-beginning --bootstrap-server localhost:9092
+json example
+.\bin\windows\kafka-console-consumer.bat --topic some-topic-with-json-value --from-beginning --bootstrap-server localhost:9092
